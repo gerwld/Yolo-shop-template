@@ -11,7 +11,7 @@ navSearchBtn.onclick = function() {
   moreBtnAction();
   navSearch.classList.add('search-open');
   navSearch.focus();
-  concole.log('1');
+  navSearchInput.focus();
 } else {
   navSearch.classList.add('search-open');
   navSearchInput.focus();
