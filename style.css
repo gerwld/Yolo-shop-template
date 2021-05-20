@@ -303,6 +303,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: white;
   border: none;
   border-radius: 30px;
+  box-shadow: 0 0 0 1pt var(--ygray) inset;
 }
 
 .search-open {
@@ -311,7 +312,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .nav-icons__search-block:focus {
   outline: none;
-  box-shadow: 0 0 0 1pt var(--ygray) inset;
+
 }
 
 @media (max-width: 1292px) {
