@@ -169,6 +169,7 @@ main a:hover {
   border: none;
   position: relative;
   z-index: -1;
+  min-height: 20px;
 }
 
 .btn_yellow-2::after{
@@ -179,7 +180,7 @@ main a:hover {
   height: 2px;
 
   left: 29px;
-  bottom: 26px;
+  bottom: 8px;
   z-index: -1;
   background-color: var(--yyellow);
 }
@@ -468,7 +469,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .modal-form__label_inline {
-  flex: 1 0 86%;
+  flex: 1 0 83%;
 }
 
 .modal-form__input input {
@@ -590,6 +591,23 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1292px) {
   .content-wrapper {
     margin-left: 40px;
@@ -626,6 +644,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-position: 50% 50%;
   background-size: 100% 128%;
   background-attachment: initial;
+  min-height: 565px;
 }
 }
 
@@ -643,18 +662,34 @@ input[type="search"]::-webkit-search-results-decoration {
   .main-sign-up {
     margin-left: 45%;
   }
-
+  .main-subscribe {
+    margin: 0 auto;
+  }
+/* Subscribe page mobile view */
+  .main-bg-subs::before {
+    height: 30%;
+    min-height: 20%;
+    background-size: cover;
+    background-position: center;
+  }
+  .main-bg-subs::before {
+    width: 100%;
+  }
+  .main-bg-subs .main_header {
+    flex: 1;
+}
+/* Subscribe end */
 }
 
 @media (max-width: 615px) {
-  .main-body {
+  .main-bg {
     background: url('img/background-mb.png');
     background-position: 50% 50%;
     background-size: 100% 128%;
     background-attachment: initial;
   }
 
-  .main-body_50::before {
+  .sign-up-bg::before {
     width: 30%;
     background-image: none;
     background-color: #F6E6F1;
@@ -670,6 +705,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
   .more-nav__btn {
     margin-left: -20px;
+  }
+
+  .main-subscribe {
+    max-width: 90%;
   }
 }
 
@@ -696,15 +735,27 @@ input[type="search"]::-webkit-search-results-decoration {
     z-index: 0;
   }
 
-  .main-body_50::before {
+  .sign-up-bg::before {
     width: 0%;
   }
   .main-sign-up {
     margin: 0 auto;
   }
+  .main-bg-subs::before {
+    height: 42%;
+  }
+  .main-bg-subs .main_header {
+    flex: 1 0 42%;
+  }
+  .main-subscribe {
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 345px) {
+  h1 {
+    font-size: 43px;
+  }
   .content-wrapper,
   .more-nav__btn  {
     margin-left: 0;
