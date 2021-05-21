@@ -414,6 +414,8 @@ input[type="search"]::-webkit-search-results-decoration {
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: 5.5px, 5.5px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 .modal-form__input_name input {
