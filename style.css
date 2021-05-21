@@ -391,6 +391,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: inline-block;
   font-weight: normal;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .modal-form__label {
@@ -400,11 +401,6 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #2E313C;
   color: var(--yblack);
   margin-bottom: 3px;
-}
-
-.modal-form__label_inline {
-  display: inline-block;
-  margin-bottom: auto;
 }
 
 .modal-form__input input {
@@ -448,6 +444,8 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: space-between;
   margin-top: 38px;
 }
+
+/* Toggle checkbox */
 
 .modal-form__toggle {
   position: relative;
@@ -499,10 +497,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .modal-form__toggle-input:focus + .modal-form__slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: none;
 }
 
-
+/* Toggle checkbox end */
 
 
 
