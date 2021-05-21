@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: > 1%
+*/
+
 :root {
   --yblack: #2E313C;
   --ygray: #F2F2F2;
@@ -45,10 +52,7 @@ body {
   height: 100vh;
   max-height: 100vh;
   background: url('img/background.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
+  background-size: cover;
 
 }
 
@@ -346,13 +350,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media (max-width: 693px) {
-.main-nav__list {
-display: none;
-}
+  .main-nav__list {
+  display: none;
+  }
 
-.nav-icons__search-block {
-  position: unset;
-}
+  .nav-icons__search-block {
+    position: unset;
+  }
 }
 
 @media (max-width: 615px) {
@@ -407,9 +411,9 @@ display: none;
     height: 73vh;
     margin-left: 5px;
     margin-right: 5px;
-}
-.main-body {
-  background-position: 50% 65%;
-}
+  }
+  .main-body {
+    background-position: 50% 65%;
+  }
 
 }
