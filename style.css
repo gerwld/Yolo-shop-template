@@ -163,7 +163,6 @@ body {
 .more-nav::before {
   content: "";
   position: absolute;
-  z-index: -1;
   width: 100%;
   height: 0%;
   left: 0;
@@ -196,6 +195,7 @@ body {
 }
 
 .more-nav__btn {
+  position: relative;
   width: 56px;
   height: 56px;
   border: none;
@@ -242,6 +242,7 @@ body {
   align-items: center;
   height: 75vh;
   max-height: 1210px;
+  min-height: 340px;
 }
 
 .main-content__slogan {
