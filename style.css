@@ -44,10 +44,6 @@ a {
   padding: 10px 0;
 }
 
-a:hover {
-  color: #7E959E;
-}
-
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -179,7 +175,7 @@ a:hover {
 }
 
 .main-nav__item:hover {
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 .main-nav__item_active:hover {
   background-color: rgba(255,255,255, 0.3);
@@ -394,6 +390,10 @@ input[type="search"]::-webkit-search-results-decoration {
   text-decoration: none;
 }
 
+.modal-form__link_terms:hover {
+  color: #7E959E;
+}
+
 .modal-form__label {
   display:block;
   font-size: 12px;
@@ -503,7 +503,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* Toggle checkbox end */
-
 
 
 
