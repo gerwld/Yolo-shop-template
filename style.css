@@ -61,6 +61,11 @@ main a:hover {
   color: #7E959E;
 }
 
+.content-wrapper {
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -121,6 +126,11 @@ main a:hover {
   right: 0;
 }
 
+.sign-up-bg::before {
+  background-position: 54% 50%;
+  background-size: 180% 100%;
+}
+
 .main-bg-subs::before {
   background-image: url('img/subscribe.png');
 }
@@ -135,11 +145,6 @@ main a:hover {
 
 .main-bg-contact::before {
   background-image: url('img/bg-contact-us.png');
-}
-
-.content-wrapper {
-  max-width: 1192px;
-  margin: 0 auto;
 }
 
 .btn {
@@ -455,8 +460,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main_50-left {
-  min-width: 40%;
-  max-width: 45%;
+  width: 45%;
 }
 
 .main-sign-up__sign-in {
@@ -497,7 +501,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .modal-form__input input {
-  width: 80%;
+  width: 85%;
   height: 35px;
   padding-left: 40px;
   padding-right: 20px;
@@ -507,6 +511,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: 5.5px, 5.5px;
+  box-sizing: border-box;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
@@ -531,6 +536,7 @@ input[type="search"]::-webkit-search-results-decoration {
   width: auto;
   height: auto;
   margin: 0;
+  padding: 0;
 }
 
 .modal-form__input input::placeholder {
@@ -679,6 +685,11 @@ ul.debug-menu {
     margin-left: 40px;
     margin-right: 40px;
   }
+
+/* Background sign-up page zoom  */
+.sign-up-bg::before {
+  background-size: 200% 100%;
+  }
 }
 
 @media (max-width: 910px) {
@@ -686,7 +697,6 @@ ul.debug-menu {
     margin-left: 40px;
     margin-right: 40px;
   }
-
 
   .nav-icons__search-block {
     position: absolute;
@@ -697,63 +707,76 @@ ul.debug-menu {
   .content-wrapper {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .sign-up-bg::before {
+    background-image: url('img/background-mb.png');
+    background-attachment: initial;
+    background-size: 100% 100%;
+  }
+
+  .main-bg-subs::before {
+    background: url('img/subscribe.png');
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-attachment: initial;
+
+  }
+  .about-us-bg::before {
+    background-size: 130% 100%;
+    width: 40%;
+  }
+  .about-us-bg .main_50-right {
+    margin-left: 45%;
+  }
+
+  .contact-us {
+    width: 50%;
+  }
 }
-
-.sign-up-bg::before {
-  background-image: url('img/background-mb.png');
-  background-attachment: initial;
-  background-size: 100% 100%;
-}
-
-.main-bg-subs::before {
-  background: url('img/subscribe.png');
-  background-position: 50% 50%;
-  background-size: 100% 100%;
-  background-attachment: initial;
-
-}
-.about-us-bg::before {
-  background-size: 130% 100%;
-  width: 40%;
-}
-.about-us-bg .main_50-right {
-  margin-left: 45%;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 750px) {
-
-  .main-body_50::before {
-    background: none;
-    width: 0;
-    height: 0;
+/* main page background properties */
+.main-bg {
+  background-size: 190% 100%;
+  background-position: 54% 50%;
+}
+/* background pseudoblock disable */
+  /* .main-bg-contact::before, */
+  .main-bg-subs::before,
+  .about-us-bg::before {
+    background-image: none;
   }
+
+/* body 50 properties  */
+.main-body_50::before {
+  width: 40%;
+  background-size: 100% 100%;
+}
+
+.main-sign-up {
+  margin-left: 45%;
+}
+/* body 50 properties end */
+
+/* Contact us properties */
+.main-bg-contact::before {
+  background-size: cover;
+}
+/* background mobile, not pseudoblock becouse its flex */
   .header {
-    flex: 0 0 42%;
-    border: 1px solid blue;
     background-size: cover;
     background-position: center;
+    border-bottom: 1px solid blue;
   }
+
+  .main-bg-subs .header,
+  .about-us-bg .header {
+    flex: 0 0 30%;
+  }
+
+/* background images, same as in pseudoblocks */
   .main-bg-subs .header {
     background-image: url('img/subscribe.png');
   }
@@ -761,13 +784,208 @@ ul.debug-menu {
   .about-us-bg .header {
     background-image: url('img/bg-about-us.png');
   }
-
-  .main-bg-contact .header {
+  /* Disabled */
+  /* .main-bg-contact .header {
     background-image: url('img/bg-contact-us.png');
+  } */
+
+  /* .main-bg-contact .header {
+    flex: 0 0 30%;
+  } */
+
+/* center main section in subscribe-page */
+  .main-subscribe {
+    width: auto;
+    margin: 0 auto;
+  }
+
+/* about-us changes */
+  .about-us-bg  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-us-bg::before {
+    display: none;
+  }
+  .about-us-bg .main_50-right {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+/* margin of main */
+  .main-about,
+  .main-subscribe,
+  .contact-us {
+    margin-top: 32px;
+  }
+
+/* search block properties */
+  .nav-icons__search-block {
+    position: unset;
+  }
+/* hide main navigation */
+  .main-nav__list {
+  display: none;
+  }
+
+/* footer top margin */
+  .main_footer {
+      margin-top: 48px;
+  }
+
+  /* remove content-wrapper in subscribe-page */
+  .main-bg-subs  {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+}
+
+@media (max-width: 615px) {
+
+  /* main page background */
+  .main-bg {
+    background: url('img/background-mb.png');
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-attachment: initial;
+  }
+
+  .main-content__slogan {
+    margin-bottom: 10px;
+  }
+
+/* sign-up bg properties */
+  .sign-up-bg::before {
+    width: 26%;
+    background-image: none;
+    background-color: #F6E6F1;
+  }
+
+  .main-sign-up {
+    margin-left: 30%;
+  }
+
+  .main-subscribe {
+    max-width: 100%;
+  }
+  .main-bg-contact::before {
+    width: 30%;
+  }
+  .contact-us {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 440px){
+
+  h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+  }
+
+/* remove btn-navigation margin*/
+    .header,
+    .main-bg-contact {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+/* Add content-wrapper margin  */
+.contact-us {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Search mobile style */
+  .nav-icons {
+    position: unset;
+  }
+  .nav-icons__search-block {
+    position: absolute;
+    right: calc(50vw - 90px);
+    top: 70px;
+    z-index: 100;
+    min-height: 55px;
+    font-size: 16px;
+  }
+  .seach-input::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #a9a9a97a;
+    z-index: 0;
   }
 
   .main-subscribe {
     margin-bottom:auto;
+  }
+
+/* Backgound on mobile (image - then content) */
+  .main-bg-subs .header,
+  .about-us-bg .header,
+  .main-bg-contact .header {
+    flex: 0 0 45%;
+  }
+
+/* background sign-up & contact-us page disable */
+  .sign-up-bg::before,
+  .main-bg-contact::before {
+    display: none;
+}
+
+/* Width 100% for main section in contact-us page */
+.contact-us {
+  width: auto;
+  max-width: 100%;
+}
+
+.main-sign-up {
+    margin-left: 0;
+}
+/* Enabled background for contact-us header section */
+.main-bg-contact .header {
+  background-image: url('img/bg-contact-us.png');
+}
+}
+
+@media (max-width: 345px) {
+  .content-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+/* sign-up changes */
+  .main-sign-up {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* about-us changes */
+    .about-us-bg .main_50-right {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+  /* remove btn-navigation margin*/
+      .header,
+      .main-bg-contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+  h1 {
+    font-size: 41px;
+  }
+  .main-content {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .main-body {
+    background-position: 50% 65%;
   }
 }
 
@@ -779,7 +997,7 @@ ul.debug-menu {
   }
 }
 
-@media (max-height: 670px) {
+@media (max-height: 674px) {
   .main-body .main_footer {
     margin-top: 0;
   }
@@ -790,7 +1008,14 @@ ul.debug-menu {
     height: 120vh;
   }
 }
-@media (max-height: 568px) {
+
+@media (max-height: 690px) {
+  .main-body {
+    background-size: 100% 120%;
+    background-position: 50% 81%;
+  }
+}
+@media (max-height: 610px) {
   .main-body {
     background-position: 50% 100%;
     background-size: 100% 121%;
