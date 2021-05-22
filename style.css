@@ -463,6 +463,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .section_title {
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .modal-form {
