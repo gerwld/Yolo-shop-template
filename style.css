@@ -382,7 +382,7 @@ main a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  /* margin-top: 48px; */
+  min-height: 110px;
 }
 
 .nav-icons_footer::before,
@@ -765,7 +765,7 @@ ul.debug-menu {
 .main-about,
 .main-subscribe,
 .contact-us {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .main_footer {
     margin-top: 48px;
