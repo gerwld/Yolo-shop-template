@@ -122,7 +122,6 @@ main a:hover {
 
 .sign-up-bg::before {
   background-image: url('img/background.png');
-  /* background-size: cover; */
 }
 
 .about-us-bg::before {
@@ -131,7 +130,6 @@ main a:hover {
 
 .main-bg-contact::before {
   background-image: url('img/bg-contact-us.png');
-  /* background-size: cover; */
 }
 
 .content-wrapper {
@@ -736,7 +734,7 @@ ul.debug-menu {
   .about-us-bg .main_50-right {
     margin-left: 0;
   }
-/* Subscribe page mobile view */
+/* Subscribe page */
   .main-bg-subs::before {
     width: 100%;
     height: 40%;
@@ -749,7 +747,6 @@ ul.debug-menu {
   .about-us-bg .main_header {
     flex: 0 0 300px;
 }
-/* Subscribe end */
 
 .main-about {
   margin-left: 0;
@@ -765,7 +762,7 @@ ul.debug-menu {
 .main-about,
 .main-subscribe,
 .contact-us {
-  padding-top: 0px;
+  margin-top: 32px;
 }
 .main_footer {
     margin-top: 48px;
@@ -813,6 +810,7 @@ ul.debug-menu {
 @media (max-width: 440px){
   h1 {
     font-size: 42px;
+    letter-spacing: 4px;
   }
   .nav-icons {
     position: unset;
@@ -845,7 +843,7 @@ ul.debug-menu {
   .main-bg-subs .main_header,
   .about-us-bg .main_header,
   .main-bg-contact .main_header {
-  flex: 0 0 45%;
+    flex: 0 0 45%;
 }
   .main-bg-subs::before,
   .about-us-bg::before,
@@ -855,8 +853,8 @@ ul.debug-menu {
   }
 
   .main-bg-contact::before {
-  width: 100%;
-  top: 0;
+    width: 100%;
+    top: 0;
   }
   .contact-us {
     max-width: 100%;
@@ -866,6 +864,7 @@ ul.debug-menu {
 @media (max-width: 345px) {
   h1 {
     font-size: 41px;
+    letter-spacing: normal;
   }
   .content-wrapper,
   .more-nav__btn  {
@@ -888,18 +887,18 @@ ul.debug-menu {
     margin-left: 10px;
   }
 }
-
+/* Height mediaqueries */
 @media (max-height: 780px) {
   .main-body .main_footer {
     margin-top: 20px;
   }
-  }
+}
 
 @media (max-height: 670px) {
   .main-body .main_footer {
     margin-top: 0;
   }
-  }
+}
 
 @media (max-height: 520px) {
   .main-body {
@@ -914,4 +913,4 @@ ul.debug-menu {
   .main-content__slogan {
     font-size: 14px;
   }
-  }
+}
