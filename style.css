@@ -811,6 +811,9 @@ ul.debug-menu {
 }
 
 @media (max-width: 440px){
+  h1 {
+    font-size: 43px;
+  }
   .nav-icons {
     position: unset;
   }
