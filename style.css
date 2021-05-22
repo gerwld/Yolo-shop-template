@@ -843,13 +843,13 @@ ul.debug-menu {
   .main-bg-subs .main_header,
   .about-us-bg .main_header,
   .main-bg-contact .main_header {
-    flex: 0 0 45%;
+    flex: 0 0 50%;
     min-height: 45%;
 }
   .main-bg-subs::before,
   .about-us-bg::before,
   .main-bg-contact::before {
-    height: 45%;
+    height: 50%;
     min-height: 0;
   }
 
