@@ -848,6 +848,7 @@ ul.debug-menu {
   .about-us-bg::before,
   .main-bg-contact::before {
     height: 45%;
+    min-height: 300px;
   }
   .main-bg-contact::before {
   width: 100%;
