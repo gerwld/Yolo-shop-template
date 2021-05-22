@@ -18,6 +18,10 @@
 ::-moz-selection { background-color: var(--ybluegray);}
 ::selection { background-color: var(--ybluegray);}
 
+html {
+  height: 100vh;
+}
+
 html,
 body {
   margin: 0;
@@ -87,6 +91,7 @@ main a:hover {
 }
 
 .main-body_50 {
+  border: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -764,12 +769,13 @@ ul.debug-menu {
 .contact-us {
   padding-top: 22px;
   border-top: 5px solid red;
+  margin-bottom: auto;
 }
 .main_footer {
     margin-top: 48px;
   }
 }
-/* 
+
 @media (max-width: 615px) {
   .main-bg {
     background: url('img/background-mb.png');
@@ -806,9 +812,9 @@ ul.debug-menu {
     max-width: 70%;
   }
 
-} */
+}
 
-/* @media (max-width: 440px){
+@media (max-width: 440px){
   h1 {
     font-size: 42px;
     letter-spacing: 3px;
@@ -861,7 +867,7 @@ ul.debug-menu {
   .contact-us {
     max-width: 100%;
   }
-} */
+}
 
 @media (max-width: 345px) {
   h1 {
