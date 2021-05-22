@@ -845,6 +845,7 @@ ul.debug-menu {
   .about-us-bg .main_header,
   .main-bg-contact .main_header {
     flex: 0 0 50%;
+    background-color: blue;
 }
   .main-bg-subs::before,
   .about-us-bg::before,
