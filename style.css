@@ -843,8 +843,7 @@ ul.debug-menu {
   .main-bg-subs .main_header,
   .about-us-bg .main_header,
   .main-bg-contact .main_header {
-    flex: 0 0 50%;
-    min-height: 50vh;
+    flex: 0 0 50vh;
 }
   .main-bg-subs::before,
   .about-us-bg::before,
