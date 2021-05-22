@@ -769,7 +769,7 @@ ul.debug-menu {
     margin-top: 48px;
   }
 }
-
+/* 
 @media (max-width: 615px) {
   .main-bg {
     background: url('img/background-mb.png');
@@ -806,7 +806,7 @@ ul.debug-menu {
     max-width: 70%;
   }
 
-}
+} */
 
 /* @media (max-width: 440px){
   h1 {
