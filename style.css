@@ -762,7 +762,8 @@ ul.debug-menu {
 .main-about,
 .main-subscribe,
 .contact-us {
-  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 5px solid red;
 }
 .main_footer {
     margin-top: 48px;
@@ -843,7 +844,7 @@ ul.debug-menu {
   .main-bg-subs .main_header,
   .about-us-bg .main_header,
   .main-bg-contact .main_header {
-    flex: 0 0 50vh;
+    flex: 0 0 50%;
 }
   .main-bg-subs::before,
   .about-us-bg::before,
