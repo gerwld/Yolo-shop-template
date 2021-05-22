@@ -96,7 +96,6 @@ main a:hover {
 }
 
 .main-body_50 {
-  border: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -768,7 +767,6 @@ ul.debug-menu {
   .header {
     background-size: cover;
     background-position: center;
-    border-bottom: 1px solid blue;
   }
 
   .main-bg-subs .header,
