@@ -949,6 +949,10 @@ ul.debug-menu {
 .main-bg-contact .header {
   background-image: url('img/bg-contact-us.png');
 }
+.main-bg {
+  margin-left: 0;
+  margin-right: 0;
+}
 }
 
 @media (max-width: 345px) {
