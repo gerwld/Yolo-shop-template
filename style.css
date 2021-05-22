@@ -854,12 +854,9 @@ ul.debug-menu {
     height: 45%;
     min-height: 280px;
   }
-  .main-bg-contact {
-    justify-content: flex-start;
-  }
+
   .main-bg-contact::before {
   width: 100%;
-  min-height: 0;
   top: 0;
   }
   .contact-us {
