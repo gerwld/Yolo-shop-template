@@ -808,7 +808,7 @@ ul.debug-menu {
 
 }
 
-@media (max-width: 440px){
+/* @media (max-width: 440px){
   h1 {
     font-size: 42px;
     letter-spacing: 3px;
@@ -861,7 +861,7 @@ ul.debug-menu {
   .contact-us {
     max-width: 100%;
   }
-}
+} */
 
 @media (max-width: 345px) {
   h1 {
