@@ -1272,7 +1272,9 @@ ul.debug-menu_hidden {
   .type-1-product__price {
     padding-left: 23px;
   }
-  .header-navbar__nav {
+
+  
+  .catalogue-bg .header-navbar__nav {
     margin-left: -20px;
   }
 }
