@@ -47,3 +47,14 @@ function searchOpen(){
   listBg.classList.toggle('more-nav-active');
   mainNav.classList.toggle('visuallyhidden');
 }
+
+// Sys.menu
+let debugMenu = document.querySelector('.debug-menu');
+let debugMenuBtn = document.querySelector('.debug-menu__button');
+
+debugMenuBtn.onclick = function() {
+  debugMenu.classList.toggle('debug-menu_hidden');
+  if (debugMenu.classList.contains('debug-menu_hidden')) {
+  debugMenuBtn.innerHTML = "+";
+} else {debugMenuBtn.innerHTML = "✕";}
+}
