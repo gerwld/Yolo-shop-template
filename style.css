@@ -1273,7 +1273,8 @@ ul.debug-menu_hidden {
     padding-left: 23px;
   }
 
-  
+/* Remove margin for mobile menu */
+  .sign-up-bg  .header-navbar__nav,
   .catalogue-bg .header-navbar__nav {
     margin-left: -20px;
   }
