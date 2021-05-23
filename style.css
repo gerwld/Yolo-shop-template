@@ -1350,16 +1350,16 @@ ul.debug-menu_hidden {
 }
 
 @media (max-height: 690px) {
-  .main-body {
+  /* .main-body {
     background-size: 100% 120%;
     background-position: 50% 81%;
-  }
+  } */
 }
 @media (max-height: 610px) {
-  .main-body {
+  /* .main-body {
     background-position: 50% 100%;
     background-size: 100% 121%;
-  }
+  } */
   .main-content__slogan {
     font-size: 14px;
   }
