@@ -1,30 +1,19 @@
 @media (max-width: 750px) {
-  .main-nav__list {
-  display: none;
-  }
 
-  .nav-icons__search-block {
-    position: unset;
-  }
-  .main-body_50::before {
-    width: 40%;
-  }
-  .main-sign-up {
-    margin-left: 45%;
-  }
+
 
   .about-us-bg .main_50-right {
     margin-left: 0;
   }
 /* Subscribe page */
-  .main-bg-subs::before {
-    width: 100%;
-    height: 45%;
-    min-height: 20%;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-  }
+/* .main-bg-subs::before {
+  width: 100%;
+  height: 45%;
+  min-height: 20%;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+} */
   .main-bg-subs .main_header,
   .about-us-bg .main_header {
     flex: 0 0 45%;
@@ -34,101 +23,27 @@
   margin-left: 0;
 }
 
-.about-us-bg::before {
+/* .about-us-bg::before {
   width: 100%;
   height: 45%;
   min-height: 0;
   top: 0;
   background-size: cover;
-}
-.main-about,
-.main-subscribe,
-.contact-us {
-  padding-top: 22px;
-  border-top: 5px solid red;
-}
-.main_footer {
-    margin-top: 48px;
-  }
+} */
 }
 
-@media (max-width: 615px) {
-  .main-bg {
-    background: url('img/background-mb.png');
-    background-position: 50% 50%;
-    background-size: 100% 100%;
-    background-attachment: initial;
-  }
-
-  .main-content__slogan {
-    margin-bottom: 10px;
-  }
-
-  .sign-up-bg::before {
-    width: 30%;
-    background-image: none;
-    background-color: #F6E6F1;
-  }
-
-  .main-sign-up {
-    margin-left: 35%;
-  }
-
-  .more-nav__btn {
-    margin-left: -20px;
-  }
-
-  .main-subscribe {
-    max-width: 100%;
-  }
-  .main-bg-contact::before {
-    width: 30%;
-  }
-  .contact-us {
-    max-width: 70%;
-  }
-
-}
 
 @media (max-width: 440px){
-  h1 {
-    font-size: 42px;
-    letter-spacing: 3px;
-  }
-  .nav-icons {
-    position: unset;
-  }
-  .nav-icons__search-block {
-    position: absolute;
-    right: calc(50vw - 90px);
-    top: 70px;
-    z-index: 100;
-    min-height: 55px;
-    font-size: 16px;
-  }
-  .seach-input::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: #a9a9a97a;
-    z-index: 0;
-  }
 
-  .sign-up-bg::before {
-    width: 0%;
-  }
   .main-sign-up {
     margin: 0 auto;
   }
-  .main-bg-subs .main_header,
-  .about-us-bg .main_header,
-  .main-bg-contact .main_header {
+  /* .main-bg-subs .header,
+  .about-us-bg .header,
+  .main-bg-contact .header {
     flex: 0 0 50%;
     background-color: blue;
-}
+} */
   /* .main-bg-subs::before,
   .about-us-bg::before,
   .main-bg-contact::before {
@@ -136,38 +51,11 @@
     min-height: 0;
   } */
 
-  .main-bg-contact::before {
+  /* .main-bg-contact::before {
     width: 100%;
     top: 0;
-  }
+  } */
   .contact-us {
     max-width: 100%;
-  }
-}
-
-@media (max-width: 345px) {
-  h1 {
-    font-size: 41px;
-    letter-spacing: 3px;
-  }
-  .content-wrapper,
-  .more-nav__btn  {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .main-content {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .main-body {
-    background-position: 50% 65%;
-  }
-  .main-about,
-  .about-us-bg .main_50-right,
-  .contact-us,
-  .main-subscribe {
-    margin-right: 10px;
-    margin-left: 10px;
   }
 }
