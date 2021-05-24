@@ -1017,7 +1017,6 @@ ul.debug-menu_hidden {
 @media (max-width: 750px) {
 /* main page background properties */
 .main-bg {
-  /* background-size: 190% 100%; */
   background-position: 54% 50%;
 }
 /* background pseudoblock disable */
@@ -1139,6 +1138,9 @@ ul.debug-menu_hidden {
   }
   .cat-content__main-info {
     grid-column-end: 3;
+  }
+  .main-bg {
+    background-size: 190% 100%;
   }
 }
 }
@@ -1293,6 +1295,7 @@ ul.debug-menu_hidden {
   .main-bg {
     background-image: url('img/background-mb.png');
     background-position: 50% 50%;
+    background-size: cover;
     background-attachment: scroll;
   }
 
@@ -1363,7 +1366,7 @@ ul.debug-menu_hidden {
 
 @media (max-height: 736px) {
   .main-content {
-    margin-top: 55vh;
+    margin-top: 60vh;
   }
 }
 
