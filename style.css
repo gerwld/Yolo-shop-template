@@ -1295,7 +1295,7 @@ ul.debug-menu_hidden {
   .main-bg {
     background-image: url('img/background-mb.png');
     background-position: 50% 50%;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-attachment: scroll;
   }
 
