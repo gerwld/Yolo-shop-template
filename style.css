@@ -1286,6 +1286,15 @@ ul.debug-menu_hidden {
   }
 
 /* Main-page mobile view */
+html.main-page {
+  height: auto;
+}
+
+body.main-bg {
+  height: 100vh;
+  min-height: 664px;
+}
+
   .main-bg .main-content__slogan {
     margin-bottom: 22px;
   }
@@ -1298,6 +1307,7 @@ ul.debug-menu_hidden {
     background-size: 100% auto;
     background-attachment: scroll;
   }
+/* Main-page mobile view end*/
 
 }
 
@@ -1332,62 +1342,29 @@ ul.debug-menu_hidden {
     margin-right: 10px;
   }
 
-  /* about-us changes */
-    .about-us-bg .main_50-right {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-  /* remove btn-navigation margin*/
-      .header,
-      .main-bg-contact {
-        margin-left: 0;
-        margin-right: 0;
-    }
-  h1 {
-    font-size: 41px;
+/* about-us changes */
+  .about-us-bg .main_50-right {
+    margin-left: 10px;
+    margin-right: 10px;
   }
+
+/* remove btn-navigation margin*/
+  .header,
+  .main-bg-contact {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+h1 {
+  font-size: 41px;
+  }
+
   .main-content {
     margin-left: 5px;
     margin-right: 5px;
   }
+
   .main-body {
-    background-position: 54% 65%;
-  }
-}
-
-
-/* Height mediaqueries */
-@media (max-height: 780px) {
-  /* .main-body .footer {
-    margin-top: 20px;
-  } */
-}
-
-@media (max-height: 736px) {
-  .main-content {
-    margin-top: 60vh;
-  }
-}
-
-@media (max-height: 520px) {
-  .main-body {
-    height: 120vh;
-  }
-}
-
-@media (max-height: 690px) {
-  /* .main-body {
-    background-size: 100% 120%;
-    background-position: 50% 81%;
-  } */
-}
-@media (max-height: 610px) {
-  /* .main-body {
-    background-position: 50% 100%;
-    background-size: 100% 121%;
-  } */
-  .main-content__slogan {
-    font-size: 14px;
+    background-position: 54% 210%;
   }
 }
