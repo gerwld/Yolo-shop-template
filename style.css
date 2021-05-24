@@ -18,14 +18,15 @@
 ::-moz-selection { background-color: var(--ybluegray);}
 ::selection { background-color: var(--ybluegray);}
 
-html {
+/* html {
   height: 100vh;
-}
+} */
 
 html,
 body {
   margin: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -1286,13 +1287,10 @@ ul.debug-menu_hidden {
   }
 
 /* Main-page mobile view */
-html.main-page {
-  height: auto;
-}
 
 body.main-bg {
   height: 100vh;
-  min-height: 664px;
+  min-height: 670px;
 }
 
   .main-bg .main-content__slogan {
@@ -1354,7 +1352,7 @@ body.main-bg {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
 h1 {
   font-size: 41px;
   }
