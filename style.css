@@ -1166,7 +1166,9 @@ background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0
   justify-content: flex-start;
   position: absolute;
   overflow: hidden;
+  overflow-x: scroll;
   right: 0;
+
 }
 
 .product-pg-photo__wrapper {
