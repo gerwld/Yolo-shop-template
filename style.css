@@ -1235,11 +1235,13 @@ background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0
 
 
 .product-pg-info__form-color input {
+  margin: 0;
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
 }
 
 /* make a color label as a button */
@@ -1313,11 +1315,12 @@ background-color: #C0C8ED;
 } */
 
 .product-pg-info__form-size input {
+  margin: 0;
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  width: 0;
-  height: 0;
+  width: 36px;
+  height: 38px;
 }
 
 .size_label {
