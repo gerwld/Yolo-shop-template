@@ -287,6 +287,10 @@ body.sale-page-bg {
   background-color: #4e515a;
 }
 
+.btn_backpage {
+  padding: 10px 0;
+}
+
 .header-navbar {
   display: flex;
   justify-content: space-between;
