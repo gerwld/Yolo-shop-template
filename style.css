@@ -2109,7 +2109,7 @@ img.img-grid-400 {
     margin-bottom: 0;
   }
   .product-pg-photo__block img {
-    height: 550px;
+    height: 500px;
   }
   .free-shipping-info {
   opacity: 0.5;
@@ -2195,6 +2195,6 @@ img.img-grid-400 {
     margin: 0 7px;
   }
   .product-pg-photo__block img {
-    height: 430px;
+    height: 400px;
 }
 }
