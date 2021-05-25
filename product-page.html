@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="product-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page – Yolo Template created by P. Jaworski</title>
+  <link rel="stylesheet" href="font-face.css">
+  <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="main-body product-page-bg content-wrapper">
+<header class="header product-page-header">
+  <ul class="debug-menu">
+    <span class="debug-menu__button">✕</span>
+    <h3>Sys.menu</h3>
+    <li><a href="index.html">Main Page</a></li>
+    <li><a href="subscribe.html">Subscribe Page</a></li>
+    <li><a href="sign-up.html">Sign Up Page</a></li>
+    <li><a href="about-us.html">About Page</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+    <li><a href="catalogue.html">Catalogue</a></li>
+    <li><a href="sale-page.html">Sale</a></li>
+<li><a href="product-page.html">Product Page</a></li>
+    <li><a href=""></a></li>
+  </ul>
+  <div class="header-navbar">
+    <nav class="header-navbar__nav more-nav" role="navigation">
+      <button class="btn more-nav__btn" id="more-nav" type="button"></button>
+      <ul class="more-nav__list">
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Women</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Man</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Kids</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Gifts</a></li>
+      </ul>
+    </nav>
+  <nav class="header-navbar__nav main-nav" role="navigation">
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item_active"><a href="#" class="main-nav__link">Women</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Man</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Kids</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Gifs</a></li>
+    </ul>
+  </nav>
+  <div class="header-navbar__nav nav-icons">
+    <div class="seach-input" id="nav-search"><input type="search" id="nav-search-block" class="nav-icons__search-block" placeholder="Search.."></div>
+    <div class="nav-icons__item" id="nav-search-btn"><a href="#" class="nav-icons__link"><img src="img/icons/search.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="#" class="nav-icons__link"><img src="img/icons/cart.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="#" class="nav-icons__link"><img src="img/icons/user.svg" alt=""></a></div>
+  </div>
+</header>
+
+<main class="product-page-content">
+  <h1 class="visuallyhidden">Product info page</h1>
+  <section class="product-page__blocks">
+    <div class="product-page__block product-page__block-1 product-pg-photo">
+      <div class="product-pg-photo__block"><img src="img/product-page/product-photo.png" alt="Product Photo">
+      <div class="product-pg-photo__buttons nav-arrow-buttons">
+        <button type="button" class="btn btn_type-2 btn_arrow-back"></button>
+        <button type="button" class="btn btn_type-2 btn_arrow"></button>
+      </div>
+      </div>
+    </div>
+
+    <div class="product-page__block product-page__block-2 product-pg-info">
+      <a href="javascript:history.back()" class="btn_backpage"><button type="button" class="btn btn_type-1 btn_arrow-back btn_yellow-2">back</button></a>
+      <h2 class="product-pg-info__title">Gingam Denim Jaket</h2>
+      <span class="product-page__coupon coupon-label">12345</span>
+      <p class="product-pg-info__desc">Take your love for mini skirts into fall with this fancy glen plaid number.
+        This woven skirt features ruffle trim, a self-tie front design, and concealed
+        back zip closure.
+      </p>
+      <div class="product-pg-photo__wrapper">
+        <div class="product-pg-photo__thumbs">
+            <div class="product-pg-photo__thumb"><img src="img/product-page/product-thumb-1.png" title="Click to view full picture" alt="Product Photo Thumbnail"></div>
+            <div class="product-pg-photo__thumb"><img src="img/product-page/product-thumb-2.png" title="Click to view full picture" alt="Product Photo Thumbnail"></div>
+            <div class="product-pg-photo__thumb"><img src="img/product-page/product-thumb-3.png" title="Click to view full picture" alt="Product Photo Thumbnail"></div>
+            <div class="product-pg-photo__thumb"><img src="img/product-page/product-thumb-4.png" title="Click to view full picture" alt="Product Photo Thumbnail"></div>
+            <div class="product-pg-photo__thumb"><img src="img/product-page/product-thumb-4.png" title="Click to view full picture" alt="Product Photo Thumbnail"></div>
+        </div>
+      </div>
+      <form class="product-pg-info__form">
+        <div class="product-pg-info__prop">
+          <div class="form-quantity">
+            <label for="quantity" class="form-quantity__title product-pg-info__form-title">QTY</label>
+            <div class="form-quantity-grid">
+            <input type="number" name="quantity" id="quantity-input" min="0" max="100" required value="1">
+            <button onclick="decrement()" type="button" class="form-quantity__btn form-quantity__btn_less"></button>
+            <button onclick="increment()" type="button" class="form-quantity__btn form-quantity__btn_more"></button>
+            </div>
+          </div>
+          <div class="product-pg-info__form-size">
+            <span class="product-pg-info__form-title">Size</span>
+            <label class="size_label">
+              <input type="radio" name="size" id="size-xs" required>
+              <span class="size_checkmark">XS</span>
+            </label>
+            <label class="size_label">
+              <!-- disabled item -->
+              <input type="radio" name="size" id="size-s" disabled>
+              <span class="size_checkmark checkmark_disabled" title="Not available">S</span>
+            </label>
+            <label class="size_label">
+              <input type="radio" name="size" id="size-m">
+              <span class="size_checkmark">M</span>
+            </label>
+            <label class="size_label">
+              <!-- checked item -->
+              <input type="radio" name="size" id="size-l" checked>
+              <span class="size_checkmark">L</span>
+            </label>
+          </div>
+          <div class="product-pg-info__form-color">
+            <span class="product-pg-info__form-title">Color</span>
+            <label class="color_label">
+              <input type="radio" name="color" id="pink" required>
+              <span class="color_checkmark color_checkmark-pink"></span>
+            </label>
+            <label class="color_label">
+              <input type="radio" name="color" id="green">
+              <span class="color_checkmark color_checkmark-green"></span>
+            </label>
+            <label class="color_label">
+              <!-- checked item -->
+              <input type="radio" name="color" id="yellow" checked>
+              <span class="color_checkmark color_checkmark-yellow"></span>
+            </label>
+            <label class="color_label">
+              <input type="radio" name="color" id="purple">
+              <span class="color_checkmark color_checkmark-purple"></span>
+            </label>
+          </div>
+        </div>
+        <span class="product-pg-info__price">$49.99</span>
+        <button type="submit" class="product-pg-info__button btn btn_yellow-1 btn_buy">Buy</button>
+      </form>
+      <div class="free-shipping-info">free shipping is available for orders over $100.00</div>
+    </div>
+  </section>
+</main>
+<footer class="footer product-page_footer">
+  <div class="nav-icons nav-icons_footer">
+    <div class="nav-icons__item"><a href="https://instagram.com/" target="_blank" class="nav-icons__link"><img src="img/icons/instagram.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="https://facebook.com/" target="_blank" class="nav-icons__link"><img src="img/icons/facebook.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="https://twitter.com/" target="_blank" class="nav-icons__link"><img src="img/icons/twitter.svg" alt=""></a></div>
+  </div>
+  <div class="footer__copyright">Yolo © 2020. All rights reserved</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
