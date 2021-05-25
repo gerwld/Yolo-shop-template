@@ -2114,6 +2114,9 @@ img.img-grid-400 {
   .free-shipping-info {
   opacity: 0.5;
 }
+.product-page__block-2 {
+  margin-left: 0;
+}
 }
 
 @media (max-width: 420px) {
