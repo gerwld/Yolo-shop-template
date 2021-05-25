@@ -96,3 +96,12 @@ function scrollAnchors(e, respond = null) {
         }
     }, 1000);
 }
+
+//increment + decrement input number
+
+function increment() {
+     document.getElementById('quantity-input').stepUp();
+  }
+  function decrement() {
+     document.getElementById('quantity-input').stepDown();
+  }
