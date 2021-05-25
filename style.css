@@ -2119,6 +2119,9 @@ img.img-grid-400 {
 .product-page__block-2 {
   margin-left: 0;
 }
+.product-pg-photo__thumbs {
+  max-width: 440px;
+}
 }
 
 @media (max-width: 420px) {
@@ -2129,6 +2132,9 @@ img.img-grid-400 {
     }
     .type-1-product__sub {
       padding-left: 23px;
+    }
+    .product-pg-photo__thumbs {
+      max-width: 420px;
     }
 }
 
@@ -2198,5 +2204,8 @@ img.img-grid-400 {
   }
   .product-pg-photo__block img {
     height: 400px;
+}
+.product-pg-photo__thumbs {
+  max-width: 345px;
 }
 }
