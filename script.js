@@ -99,9 +99,15 @@ function scrollAnchors(e, respond = null) {
 
 //increment + decrement input number
 
-function increment() {
-     document.getElementById('quantity-input').stepUp();
+function increment(x) {
+     document.getElementById(x).stepUp();
   }
-  function decrement() {
-     document.getElementById('quantity-input').stepDown();
+  function decrement(x) {
+     document.getElementById(x).stepDown();
   }
+
+//preloader
+
+$(window).on("load",function(){
+         $(".loader-wrapper").fadeOut("slow");
+       });

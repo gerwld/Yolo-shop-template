@@ -6,10 +6,13 @@
   <title>Yolo Template created by P. Jaworski</title>
   <link rel="stylesheet" href="font-face.css">
   <link rel="stylesheet" href="style.css?id=1234">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body class="main-body main-bg hg-100vh content-wrapper">
+<body class="main-bg">
+<div class="main-body hg-100vh content-wrapper">
 <header class="header main_header">
-  <ul class="debug-menu">
+  <!-- Sys menu -->
+<ul class="debug-menu">
     <span class="debug-menu__button">✕</span>
     <h3>Sys.menu</h3>
     <li><a href="index.html">Main Page</a></li>
@@ -23,8 +26,9 @@
     <li><a href="cart.html">Cart</a></li>
     <li><a href=""></a></li>
   </ul>
+<!-- Sys menu end -->
   <div class="header-navbar">
-    <nav class="header-navbar__nav more-nav" role="navigation">
+    <nav class="header-navbar__nav more-nav">
       <button class="btn more-nav__btn" id="more-nav" type="button"></button>
       <ul class="more-nav__list">
         <li class="more-nav__item"><a href="#" class="more-nav__link">Women</a></li>
@@ -33,7 +37,7 @@
         <li class="more-nav__item"><a href="#" class="more-nav__link">Gifts</a></li>
       </ul>
     </nav>
-  <nav class="header-navbar__nav main-nav" role="navigation">
+  <nav class="header-navbar__nav main-nav">
     <ul class="main-nav__list">
       <li class="main-nav__item main-nav__item_active"><a href="#" class="main-nav__link">Women</a></li>
       <li class="main-nav__item"><a href="#" class="main-nav__link">Man</a></li>
@@ -60,6 +64,11 @@
   </div>
   <div class="footer__copyright">Yolo © 2020. All rights reserved</div>
 </footer>
+</div>
 <script src="script.js"></script>
+<!-- pre-loader code -->
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
 </body>
 </html>
