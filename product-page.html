@@ -88,8 +88,8 @@
             <label for="quantity" class="form-quantity__title product-pg-info__form-title">QTY</label>
             <div class="form-quantity-grid">
             <input type="number" name="quantity" id="quantity-input" min="0" max="100" required value="1">
-            <button onclick="decrement()" type="button" class="form-quantity__btn form-quantity__btn_less"></button>
-            <button onclick="increment()" type="button" class="form-quantity__btn form-quantity__btn_more"></button>
+            <button onclick="decrement('quantity-input')" type="button" class="form-quantity__btn form-quantity__btn_less"></button>
+            <button onclick="increment('quantity-input')" type="button" class="form-quantity__btn form-quantity__btn_more"></button>
             </div>
           </div>
           <div class="product-pg-info__form-size">
