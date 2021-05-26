@@ -26,7 +26,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
@@ -34,6 +34,7 @@ body {
   font-size: 15px;
   color: var(--yblack);
   letter-spacing: 1px;
+  position: relative;
 }
 
 h1 {
@@ -113,21 +114,31 @@ a img {
 }
 
 .main-body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url('img/background.png') no-repeat center center fixed;
   background-size: cover;
 }
 
 .main-body_50 {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-image: none;
 }
+
+.hg-100vh {
+  min-height: 100vh;
+}
+
+/* Add margin for pages that is smaller than 100vh */
+.main-subscribe,
+.main-about,
+main.contact-us {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
 
 /* Left position by default */
 .main-body_50::before {
@@ -139,15 +150,12 @@ a img {
   background-attachment: initial;
   width: 50%;
   height: 100%;
-  min-height: calc(100% + 40px);
+  /* min-height: calc(100% + 40px); */
   z-index: -2;
   left: 0;
   bottom:0;
 }
 
-.main-bg {
-  background-color: #f5e9f2;
-}
 
 /* Right position of bg */
 .main-body_50-right::before {
@@ -155,16 +163,16 @@ a img {
   right: 0;
 }
 
-/* Remove 100vh in pages where is not nessesary */
-body.catalogue-bg,
-body.sale-page-bg,
-body.product-page-bg {
-  height: auto;
-}
 
 .sign-up-bg::before {
   background-position: 54% 50%;
   background-size: 180% 100%;
+}
+
+.main-bg {
+    background-color: #f5e9f2;
+    background: url('img/background.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .main-bg-subs::before {
@@ -561,7 +569,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .main_50-right {
   min-width: 40%;
-  margin-left: 60%;
+  margin: 32px 0 32px 60%;
 }
 
 .main_50-left {
@@ -801,13 +809,6 @@ ul.debug-menu_hidden {
 
 .contact-us__element_email::before {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjkzNzUgMy41SDMuMDYyNUMxLjkwMjM0IDMuNSAxIDQuNDQ1MzEgMSA1LjU2MjVWMTcuOTM3NUMxIDE5LjA5NzcgMS45MDIzNCAyMCAzLjA2MjUgMjBIMjAuOTM3NUMyMi4wNTQ3IDIwIDIzIDE5LjA5NzcgMjMgMTcuOTM3NVY1LjU2MjVDMjMgNC40NDUzMSAyMi4wNTQ3IDMuNSAyMC45Mzc1IDMuNVpNMjAuOTM3NSA1LjU2MjVWNy4zMjQyMkMxOS45NDkyIDguMTQwNjIgMTguNDAyMyA5LjM0Mzc1IDE1LjEzNjcgMTEuOTIxOUMxNC40MDYyIDEyLjQ4MDUgMTIuOTg4MyAxMy44NTU1IDEyIDEzLjgxMjVDMTAuOTY4OCAxMy44NTU1IDkuNTUwNzggMTIuNDgwNSA4LjgyMDMxIDExLjkyMTlDNS41NTQ2OSA5LjM0Mzc1IDQuMDA3ODEgOC4xNDA2MiAzLjA2MjUgNy4zMjQyMlY1LjU2MjVIMjAuOTM3NVpNMy4wNjI1IDE3LjkzNzVWOS45ODgyOEM0LjAwNzgxIDEwLjc2MTcgNS40MjU3OCAxMS44Nzg5IDcuNTMxMjUgMTMuNTU0N0M4LjQ3NjU2IDE0LjI4NTIgMTAuMTUyMyAxNS45MTggMTIgMTUuODc1QzEzLjgwNDcgMTUuOTE4IDE1LjQzNzUgMTQuMjg1MiAxNi40MjU4IDEzLjU1NDdDMTguNTMxMiAxMS44Nzg5IDE5Ljk0OTIgMTAuNzYxNyAyMC45Mzc1IDkuOTg4MjhWMTcuOTM3NUgzLjA2MjVaIiBmaWxsPSIjMkUzMTNDIi8+Cjwvc3ZnPgo=");
-}
-
-/* Remove bg  */
-.catalogue-bg,
-.sale-page-bg,
-.product-page-bg {
-  background-image: none;
 }
 
 /* Sale page type-1 margin */
@@ -1680,6 +1681,10 @@ input::-webkit-inner-spin-button {
     background-position: center;
   }
 
+  .main_header {
+    background-color: #f6e5f1;
+  }
+
   .main-bg-subs .header,
   .about-us-bg .header {
     flex: 0 0 30%;
@@ -1979,7 +1984,8 @@ input::-webkit-inner-spin-button {
   .main-bg-subs .header,
   .about-us-bg .header,
   .main-bg-contact .header {
-    flex: 0 0 45%;
+    /* flex: 0 0 45%; */
+    flex-basis: 500px;
   }
 
 /* background sign-up & contact-us page disable */
