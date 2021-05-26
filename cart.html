@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="cart-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page – Yolo Template created by P. Jaworski</title>
+  <link rel="stylesheet" href="font-face.css">
+  <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="main-body cart-page-bg">
+<div class="content-wrapper">
+<header class="header cart-page-header">
+  <!-- Sys menu -->
+<ul class="debug-menu">
+    <span class="debug-menu__button">✕</span>
+    <h3>Sys.menu</h3>
+    <li><a href="index.html">Main Page</a></li>
+    <li><a href="subscribe.html">Subscribe Page</a></li>
+    <li><a href="sign-up.html">Sign Up Page</a></li>
+    <li><a href="about-us.html">About Page</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+    <li><a href="catalogue.html">Catalogue</a></li>
+    <li><a href="sale-page.html">Sale</a></li>
+    <li><a href="product-page.html">Product Page</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href=""></a></li>
+  </ul>
+<!-- Sys menu end -->
+  <div class="header-navbar">
+    <nav class="header-navbar__nav more-nav">
+      <button class="btn more-nav__btn" id="more-nav" type="button"></button>
+      <ul class="more-nav__list">
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Women</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Man</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Kids</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Gifts</a></li>
+      </ul>
+    </nav>
+  <nav class="header-navbar__nav main-nav"">
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item_active"><a href="#" class="main-nav__link">Women</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Man</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Kids</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Gifs</a></li>
+    </ul>
+  </nav>
+  <div class="header-navbar__nav nav-icons">
+    <div class="seach-input" id="nav-search"><input type="search" id="nav-search-block" class="nav-icons__search-block" placeholder="Search.."></div>
+    <div class="nav-icons__item" id="nav-search-btn"><a href="#" class="nav-icons__link"><img src="img/icons/search.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="#" class="nav-icons__link"><img src="img/icons/cart.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="#" class="nav-icons__link"><img src="img/icons/user.svg" alt=""></a></div>
+  </div>
+</header>
+
+<main class="cart-page-content">
+  <h1 class="visuallyhidden">Cart page</h1>
+  <a href="javascript:history.back()" class="btn_backpage"><button type="button" class="btn btn_type-1 btn_arrow-back btn_yellow-2">back</button></a>
+  <section class="cart-page__products">
+  <div class="cart-page__product">
+    <div class="cart-page__product-section-1">
+      <div class="cart-page__product-image"><img src="img/product-1.png" alt="Product Image">
+        <span class="cart-page__coupon coupon-label">12345</span>
+      </div>
+    <div class="cart-page__product-info">
+      <h3 class="cart-page__product-title">Gingam denim jaket</h3>
+      <span class="cart-page__subdesc">details:</span>
+      <ul class="cart-page__product-desc">
+        <li>Cotton/polyester/spandex</li>
+        <li>Machine washable</li>
+        <li>Imported </li>
+      </ul>
+      <span class="cart-page__product-price">$49.99</span>
+    </div>
+  </div>
+    <div class="cart-page__product-specs cart-page_input-style">
+
+      <div class="form-quantity">
+        <label for="quantity" class="form-quantity__title product-pg-info__form-title">QTY</label>
+        <div class="form-quantity-grid">
+        <input type="number" name="quantity" id="quantity-input-2" min="0" max="100" required value="1">
+        <button onclick="decrement('quantity-input-2')" type="button" class="form-quantity__btn form-quantity__btn_less"></button>
+        <button onclick="increment('quantity-input-2')" type="button" class="form-quantity__btn form-quantity__btn_more"></button>
+        </div>
+      </div>
+
+      <div class="product-pg-info__form-size">
+        <span class="product-pg-info__form-title">Size</span>
+        <label class="size_label">
+          <input type="radio" name="size-2" id="size-xs" required>
+          <span class="size_checkmark">XS</span>
+        </label>
+        <label class="size_label">
+          <!-- disabled item -->
+          <input type="radio" name="size-2" id="size-s" disabled>
+          <span class="size_checkmark checkmark_disabled" title="Not available">S</span>
+        </label>
+        <label class="size_label">
+          <input type="radio" name="size-2" id="size-m">
+          <span class="size_checkmark">M</span>
+        </label>
+        <label class="size_label">
+          <!-- checked item -->
+          <input type="radio" name="size-2" id="size-l" checked>
+          <span class="size_checkmark">L</span>
+        </label>
+      </div>
+
+      <div class="product-pg-info__form-color">
+        <span class="product-pg-info__form-title">Color</span>
+        <label class="color_label">
+          <input type="radio" name="color-2" id="pink" required>
+          <span class="color_checkmark color_checkmark-pink"></span>
+        </label>
+        <label class="color_label">
+          <input type="radio" name="color-2" id="green">
+          <span class="color_checkmark color_checkmark-green"></span>
+        </label>
+        <label class="color_label">
+          <!-- checked item -->
+          <input type="radio" name="color-2" id="yellow" checked>
+          <span class="color_checkmark color_checkmark-yellow"></span>
+        </label>
+        <label class="color_label">
+          <input type="radio" name="color-2" id="purple">
+          <span class="color_checkmark color_checkmark-purple"></span>
+        </label>
+      </div>
+    </div>
+      <button class="cart-page__product-delete" onclick="#">Remove</button>
+  </div>
+
+<!-- Product 2 -->
+  <div class="cart-page__product">
+    <div class="cart-page__product-section-1">
+      <div class="cart-page__product-image"><img src="img/product-7.png" alt="Product Image">
+        <span class="cart-page__coupon coupon-label">12345</span>
+      </div>
+    <div class="cart-page__product-info">
+      <h3 class="cart-page__product-title">Tiered Ruffle Jumpsuit</h3>
+      <span class="cart-page__subdesc">details:</span>
+      <ul class="cart-page__product-desc">
+        <li>Cotton/polyester/spandex</li>
+        <!-- <li>Machine washable</li>
+        <li>Imported </li> -->
+      </ul>
+      <span class="cart-page__product-price">$49.99</span>
+    </div>
+  </div>
+    <div class="cart-page__product-specs cart-page_input-style">
+
+      <div class="form-quantity">
+        <label for="quantity" class="form-quantity__title product-pg-info__form-title">QTY</label>
+        <div class="form-quantity-grid">
+        <input type="number" name="quantity" id="quantity-input-1" min="0" max="100" required value="1">
+        <button onclick="decrement('quantity-input-1')" type="button" class="form-quantity__btn form-quantity__btn_less"></button>
+        <button onclick="increment('quantity-input-1')" type="button" class="form-quantity__btn form-quantity__btn_more"></button>
+        </div>
+      </div>
+
+      <div class="product-pg-info__form-size">
+        <span class="product-pg-info__form-title">Size</span>
+        <label class="size_label">
+          <!-- checked item -->
+          <input type="radio" name="size-1" id="size-xs" required checked>
+          <span class="size_checkmark">XS</span>
+        </label>
+        <label class="size_label">
+          <!-- disabled item -->
+          <input type="radio" name="size-1" id="size-s" disabled>
+          <span class="size_checkmark checkmark_disabled" title="Not available">S</span>
+        </label>
+        <label class="size_label">
+          <input type="radio" name="size-1" id="size-m">
+          <span class="size_checkmark">M</span>
+        </label>
+        <label class="size_label">
+          <input type="radio" name="size-1" id="size-l">
+          <span class="size_checkmark">L</span>
+        </label>
+      </div>
+
+      <div class="product-pg-info__form-color">
+        <span class="product-pg-info__form-title">Color</span>
+        <label class="color_label">
+          <input type="radio" name="color-1" id="pink" required>
+          <span class="color_checkmark color_checkmark-pink"></span>
+        </label>
+        <label class="color_label">
+        <!-- checked item -->
+          <input type="radio" name="color-1" id="green" checked>
+          <span class="color_checkmark color_checkmark-green"></span>
+        </label>
+        <label class="color_label">
+          <input type="radio" name="color-1" id="yellow">
+          <span class="color_checkmark color_checkmark-yellow"></span>
+        </label>
+        <label class="color_label">
+          <input type="radio" name="color-1" id="purple">
+          <span class="color_checkmark color_checkmark-purple"></span>
+        </label>
+      </div>
+    </div>
+      <button class="cart-page__product-delete" onclick="#">Remove</button>
+  </div>
+  </section>
+  <div class="cart-page-content__summary order-summary">
+    <span class="order-summary__title">Order summary</span>
+    <div class="order-summary__grid">
+      <table class="order-summary__table">
+        <!-- discount -->
+        <tr class="order-summary__row">
+          <td class="order-summary__cell-1">Discount</td>
+          <td class="order-summary__cell-2">0</td>
+        </tr>
+        <!-- shipping -->
+        <tr class="order-summary__row">
+          <td class="order-summary__cell-1">Shipping</td>
+          <td class="order-summary__cell-2">TBD</td>
+        </tr>
+        <!-- total -->
+        <tr class="order-summary__row order-summary_total">
+          <td class="order-summary__cell-1">Total</td>
+          <td class="order-summary__cell-2">$56.90</td>
+        </tr>
+      </table>
+      <span class="order-summary__free-shipping">You`re <strong>$34.01</strong> away from shipping! Spend $75
+        and upgrade to express shipping for only $3.99! Want <a href="#" class="order-summary__free-shipping-link">free shipping</a></span>
+    </div>
+    <div class="order-summary__buttons">
+      <a href="#"><button type="button" class="order-summary__btn-1 btn-summary ic_basket">Go shopping</button></a>
+      <button type="submit" class="btn-summary btn-summary_submit ic_pay">Checkout</button>
+    </div>
+  </div>
+</main>
+<footer class="footer cart-page_footer">
+  <div class="nav-icons nav-icons_footer">
+    <div class="nav-icons__item"><a href="https://instagram.com/" target="_blank" class="nav-icons__link"><img src="img/icons/instagram.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="https://facebook.com/" target="_blank" class="nav-icons__link"><img src="img/icons/facebook.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="https://twitter.com/" target="_blank" class="nav-icons__link"><img src="img/icons/twitter.svg" alt=""></a></div>
+  </div>
+  <div class="footer__copyright">Yolo © 2020. All rights reserved</div>
+</footer>
+</div>
+<script src="script.js"></script>
+<!-- pre-loader code -->
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+</body>
+</html>
