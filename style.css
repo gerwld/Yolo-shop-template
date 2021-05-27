@@ -405,6 +405,7 @@ main.contact-us {
   display: block;
   position: relative;
   font-size: 15px;
+  white-space: nowrap;
 }
 
 .main-nav__item_active::after {
@@ -810,6 +811,7 @@ input {
 /* WARNING:  */
 /* Debug menu, delete after finish */
 ul.debug-menu {
+  display: none;
   position: fixed;
   z-index: 11;
   margin:0;
