@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="checkout-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout – Yolo Template created by P. Jaworski</title>
+  <link rel="stylesheet" href="font-face.css">
+  <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body class="checkout-page_bg">
+<div class="main-body content-wrapper hg-100vh">
+<header class="header checkout-page_header">
+  <!-- Sys menu -->
+<ul class="debug-menu">
+    <span class="debug-menu__button">✕</span>
+    <h3>Sys.menu</h3>
+    <li><a href="index.html">Main Page</a></li>
+    <li><a href="subscribe.html">Subscribe Page</a></li>
+    <li><a href="sign-up.html">Sign Up Page</a></li>
+    <li><a href="about-us.html">About Page</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+    <li><a href="catalogue.html">Catalogue</a></li>
+    <li><a href="sale-page.html">Sale</a></li>
+    <li><a href="product-page.html">Product Page</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="checkout.html">Checkout Page</a></li>
+  </ul>
+  <!-- Sys menu end -->
+  <div class="header-navbar">
+    <nav class="header-navbar__nav more-nav">
+      <button class="btn more-nav__btn" id="more-nav" type="button"></button>
+      <ul class="more-nav__list">
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Women</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Man</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Kids</a></li>
+        <li class="more-nav__item"><a href="#" class="more-nav__link">Gifts</a></li>
+      </ul>
+    </nav>
+  <nav class="header-navbar__nav main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item_active"><a href="#" class="main-nav__link">Women</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Man</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Kids</a></li>
+      <li class="main-nav__item"><a href="#" class="main-nav__link">Gifs</a></li>
+    </ul>
+  </nav>
+  <div class="header-navbar__nav nav-icons">
+    <div class="seach-input" id="nav-search"><input type="search" id="nav-search-block" class="nav-icons__search-block" placeholder="Search.."></div>
+    <div class="nav-icons__item" id="nav-search-btn"><a href="#" class="nav-icons__link"><img src="img/icons/search.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="#" class="nav-icons__link"><img src="img/icons/cart.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="#" class="nav-icons__link"><img src="img/icons/user.svg" alt=""></a></div>
+  </div>
+</header>
+
+<main class="main-checkout">
+  <a href="javascript:history.back()" class="btn_backpage"><button type="button" class="btn btn_type-1 btn_arrow-back btn_yellow-2">back</button></a>
+  <h1 class="checkout-page__title">Checkout</h1>
+  <form class="main-checkout__form">
+  <div class="main-checkout__content">
+    <div class="main-checkout__block-1">
+      <div class="main-checkout__first-sec">
+      <label class="main-checkout__inputbox" for="uname">first name <span class="req-span">*</span>
+        <input type="text" id="uname" name="uname" placeholder="John" maxlength="20" autocomplete="given-name" required>
+      <span class="input-ic input-ic-user"></span>
+          </label>
+      <label class="main-checkout__inputbox" for="usurname">last name <span class="req-span">*</span>
+        <input type="text" id="usurname" name="usurname" placeholder="Doe" maxlength="20" autocomplete="family-name" required>
+          <span class="input-ic input-ic-user"></span>
+      </label>
+      </div>
+      <div class="main-checkout__payment-info">
+        <h3 class="main-checkout__section-title">Payment info</h3>
+        <label class="main-checkout__inputbox" for="card-ns">cardholder name <span class="req-span">*</span>
+          <input type="text" id="card-ns" name="card-ns" placeholder="John Doe" maxlength="60" autocomplete="cc-name" required>
+          <span class="input-ic input-ic-user"></span>
+      </label>
+        <label class="main-checkout__inputbox" for="utel">card number <span class="req-span">*</span>
+          <input type="tel"  id="utel" name="utel" inputmode="numeric" pattern="[0-9\s]{13,19}" required autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+        <span class="input-ic input-ic-card"></span>
+          </label>
+        <label class="main-checkout__inputbox" for="expireMM">expire date <span class="req-span">*</span>
+          <div class="main-checkout__expire">
+          <div class="main-checkout__select-inp"><select class="main-checkout__select" name='expireMM' id='expireMM' autocomplete="cc-exp-month" required>
+            <option value=''>Month</option>
+            <option value='01'>January</option>
+            <option value='02'>February</option>
+            <option value='03'>March</option>
+            <option value='04'>April</option>
+            <option value='05'>May</option>
+            <option value='06'>June</option>
+            <option value='07'>July</option>
+            <option value='08'>August</option>
+            <option value='09'>September</option>
+            <option value='10'>October</option>
+            <option value='11'>November</option>
+            <option value='12'>December</option>
+        </select></div>
+        <div class="main-checkout__select-inp">
+        <select class="main-checkout__select" name='expireYY' id='expireYY' autocomplete="cc-exp-year" required>
+            <option value=''>Year</option>
+            <option value='21'>2021</option>
+            <option value='22'>2022</option>
+            <option value='23'>2023</option>
+            <option value='24'>2024</option>
+            <option value='25'>2025</option>
+            <option value='26'>2026</option>
+            <option value='27'>2027</option>
+            <option value='28'>2028</option>
+        </select></div>
+        </div>
+        <!-- <input type="hidden" name="expiry" id="expiry" maxlength="4" required> -->
+        <span class="input-ic input-ic-calendar"></span>
+</label>
+        <label class="main-checkout__inputbox cvv_pretext" for="ucvv">sequrity code <span class="req-span">*</span>
+          <input class="main-checkout__inputbox_cvv" type="password" id="ucvv" name="ucvv" placeholder="123" maxlength="3" required autocomplete="cc-csc">
+        <span class="input-ic input-ic-card"></span>
+          </label>
+      </div>
+    </div>
+    <div class="main-checkout__block-2">
+        <div class="main-checkout__billing-info">
+          <h3 class="main-checkout__section-title">Billing adress</h3>
+          <label class="main-checkout__inputbox" for="ucountry">country <span class="req-span">*</span>
+            <input type="text" id="ucountry" name="ucountry" placeholder="USA" required autocomplete="country">
+          <span class="input-ic input-ic-map"></span>
+          </label>
+          <label class="main-checkout__inputbox" for="ucity">city <span class="req-span">*</span>
+            <input type="text" id="ucity" name="ucity" placeholder="San Francisco" minlength="2" required autocomplete="address-level2">
+          <span class="input-ic input-ic-map-light"></span>
+          </label>
+          <label class="main-checkout__inputbox" for="ustate">state <span class="req-span">*</span>
+            <input type="text" id="ustate" name="ustate" placeholder="California"  minlength="3" required autocomplete="address-level1">
+          <span class="input-ic input-ic-map-light"></span>
+          </label>
+          <label class="main-checkout__inputbox" for="uadress">adress <span class="req-span">*</span>
+            <input type="text" id="uadress" name="uadress" placeholder="Manhattan, 23/ 123" minlength="4" required autocomplete="street-address">
+          <span class="input-ic input-ic-map-light"></span>
+          </label>
+          <label class="main-checkout__inputbox" for="u-zipcode">zip code <span class="req-span">*</span>
+            <input type="text" id="u-zipcode" name="u-zipcode" placeholder="33013" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" required autocomplete="postal-code">
+          <span class="input-ic input-ic-zip"></span>
+          </label>
+          <label class="main-checkout__inputbox" for="uemail">contact e-mail <span class="req-span">*</span>
+            <input type="email" id="uemail" name="uemail" placeholder="JohnDoe@gmail.com" required>
+          <span class="input-ic input-ic-email"></span>
+          </label>
+        </div>
+    </div>
+    </div>
+    <div class="main-checkout__block-3">
+      <div class="main-checkout__safe-info">
+        <span class="main-checkout__sub">Save Billing info for later</span>
+          <label class="modal-form__toggle" for="user-terms">
+            <input type="checkbox" name="save-bill" id="user-terms" class="modal-form__toggle-input modal-form__terms" required checked>
+            <span class="modal-form__slider"></span>
+          </label>
+      </div>
+      <button type="submit" class="btn btn_type-1 btn_arrow btn_yellow-1 btn-send">Pay Now</button>
+    </div>
+    </form>
+</main>
+<footer class="footer checkout-page_footer">
+  <div class="nav-icons nav-icons_footer">
+    <div class="nav-icons__item"><a href="https://instagram.com/" target="_blank" class="nav-icons__link"><img src="img/icons/instagram.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="https://facebook.com/" target="_blank" class="nav-icons__link"><img src="img/icons/facebook.svg" alt=""></a></div>
+    <div class="nav-icons__item"><a href="https://twitter.com/" target="_blank" class="nav-icons__link"><img src="img/icons/twitter.svg" alt=""></a></div>
+  </div>
+  <div class="footer__copyright">Yolo © 2020. All rights reserved</div>
+</footer>
+</div>
+<script src="script.js"></script>
+<!-- pre-loader code -->
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+</body>
+</html>
