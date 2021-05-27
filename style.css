@@ -811,7 +811,6 @@ input {
 /* WARNING:  */
 /* Debug menu, delete after finish */
 ul.debug-menu {
-  display: none;
   position: fixed;
   z-index: 11;
   margin:0;
