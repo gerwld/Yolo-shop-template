@@ -2472,6 +2472,13 @@ input.main-checkout__inputbox_cvv {
   .product-page__coupon {
     align-self: flex-start;
   }
+  /* Backgound on tablet (image - then content) */
+    .main-bg-subs .header,
+    .about-us-bg .header,
+    .main-bg-contact .header {
+      /* flex: 0 0 45%; */
+      flex-basis: 400px;
+    }
 }
 
 @media (max-width: 688px) {
@@ -2481,9 +2488,9 @@ input.main-checkout__inputbox_cvv {
   /* .shop-grid-1 .shop-grid-main-info {
     grid-column-end: 2;
   } */
-  .main-bg {
+  /* .main-bg {
     background-size: 190% 100%;
-  }
+  } */
   .sale-page__product h3 {
     font-size: 13px;
 }
@@ -2619,7 +2626,7 @@ input.main-checkout__inputbox_cvv {
   .about-us-bg .header,
   .main-bg-contact .header {
     /* flex: 0 0 45%; */
-    flex-basis: 400px;
+    flex-basis: 350px;
   }
 
 /* background sign-up & contact-us page disable */
