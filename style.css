@@ -527,7 +527,7 @@ main.contact-us {
   display: none;
   position: absolute;
   width: 320px;
-  height: 250px;
+  height: 230px;
   padding: 30px;
   box-sizing: border-box;
   right: -40px;
@@ -585,6 +585,10 @@ background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmN
 
 .display-block {
   display: block;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .header-navbar .nav-icons {
@@ -2037,6 +2041,41 @@ input.main-checkout__inputbox_cvv {
   bottom: 11px;
   left: 34px;
 }
+
+
+.btn-popup_card {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.cart-popup {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.popup__text {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1292px) {
