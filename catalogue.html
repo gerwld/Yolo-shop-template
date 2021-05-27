@@ -66,11 +66,13 @@
 
 <main class="cat-content shop-grid-1-mg">
   <div class="cat-content__fill fil-section">
-    <div class="fil-section__filter">
+    <div class="fil-section__filter" onclick="popupShow('filter_fil', 'display-block')">
       <span class="fil-section__content">Filter</span>
+      <div class="popup filter-popup cart-popup filter_fil"><span>Pop-up block</span></div>
     </div>
-    <div class="fil-section__sortby">
+    <div class="fil-section__sortby" onclick="popupShow('filter_sort', 'display-block')">
       <span class="fil-section__content">Sort by</span>
+      <div class="popup filter-popup-1 cart-popup filter_sort"><span>Pop-up block</span></div>
     </div>
   </div>
   <section class="cat-content__main-content shop-grid-1">

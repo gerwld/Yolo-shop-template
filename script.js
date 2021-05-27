@@ -9,6 +9,8 @@ let mainNav = document.querySelector('.main-nav'); //основное меню
 let headerNav = document.querySelector('.header-navbar'); //навбар
 let navIcons = document.querySelector('.nav-icons'); //кнопки навбара
 let popupBlock = document.querySelector('.popup'); //попап
+let filterPop = document.querySelector('.filter-popup');
+let filterPop1 = document.querySelector('.filter-popup-1');
 
 //появление поля поиска и проверка меню на открытость
 navSearchBtn.onclick = function() {
@@ -39,9 +41,27 @@ document.addEventListener('mouseup', function(e) {
   }
 });
 
+  document.addEventListener('mouseup', function(e) {
+    if (!popupBlock.contains(e.target)) {
+    popupBlock.classList.remove('display-block');
+  }
+});
+
 document.addEventListener('mouseup', function(e) {
     if (!popupBlock.contains(e.target)) {
     popupBlock.classList.remove('display-block');
+  }
+});
+
+document.addEventListener('mouseup', function(e) {
+    if (!filterPop.contains(e.target)) {
+    filterPop.classList.remove('display-block');
+  }
+});
+
+document.addEventListener('mouseup', function(e) {
+    if (!filterPop1.contains(e.target)) {
+    filterPop1.classList.remove('display-block');
   }
 });
 
@@ -85,7 +105,6 @@ function popupShow(x, y) {
   // x.classList.add(y);
   let z = document.querySelector("." + x);
     z.classList.add(y);
-
 }
 
 
