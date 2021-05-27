@@ -4,6 +4,7 @@ let navSearchInput = document.getElementById('nav-search-block'); //поле п�
 let moreBtn = document.getElementById('more-nav'); //кнопка доп меню
 let listBg = document.querySelector('.more-nav'); //бекграунд доп меню
 let moreMenu = document.querySelector('.more-nav__list'); //список доп меню
+let moreMenuTablet = document.querySelector('.more-nav__list-tablet'); //список доп меню на <= 750
 let mainNav = document.querySelector('.main-nav'); //основное меню
 let headerNav = document.querySelector('.header-navbar'); //навбар
 
@@ -20,7 +21,7 @@ navSearchBtn.onclick = function() {
 moreBtn.onclick = function() {
   moreBtnAction();
 }
-//2 ивента на закрытие элементов при нажатии в любое место
+//3 ивента на закрытие элементов при нажатии в любое место
 document.addEventListener('mouseup', function(e) {
     if (!navSearchInput.contains(e.target)) {
     navSearch.classList.remove('search-open');
@@ -28,10 +29,17 @@ document.addEventListener('mouseup', function(e) {
 });
 
 document.addEventListener('mouseup', function(e) {
-    if (!headerNav.contains(e.target)) {
+    if (!headerNav.contains(e.target) || cartButton.contains(e.target)) {
       moreMenu.classList.remove('more-active');
       listBg.classList.remove('more-nav-active');
       mainNav.classList.remove('visuallyhidden');
+      popupBlock.classList.remove('display-block');
+  }
+});
+
+document.addEventListener('mouseup', function(e) {
+    if (!popupBlock.contains(e.target)) {
+    popupBlock.classList.remove('display-block');
   }
 });
 
@@ -46,6 +54,7 @@ function searchOpen(){
   moreMenu.classList.toggle('more-active');
   listBg.classList.toggle('more-nav-active');
   mainNav.classList.toggle('visuallyhidden');
+  moreMenuTablet.classList.toggle('more-active-tablet');
 }
 
 // Sys.menu
@@ -59,43 +68,6 @@ debugMenuBtn.onclick = function() {
 } else {debugMenuBtn.innerHTML = "✕";}
 }
 
-//smooth scroll
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 800);
-});
-
-//smooth scroll iOS Safari
-(function() {
-    scrollTo();
-})();
-
-function scrollTo() {
-    const links = document.querySelectorAll('.scroll');
-    links.forEach(each => (each.onclick = scrollAnchors));
-}
-
-function scrollAnchors(e, respond = null) {
-    const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-    e.preventDefault();
-    var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-    const targetAnchor = document.querySelector(targetID);
-    if (!targetAnchor) return;
-    const originalTop = distanceToTop(targetAnchor);
-    window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-    const checkIfDone = setInterval(function() {
-        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-        if (distanceToTop(targetAnchor) === 0 || atBottom) {
-            targetAnchor.tabIndex = '-1';
-            targetAnchor.focus();
-            window.history.pushState('', '', targetID);
-            clearInterval(checkIfDone);
-        }
-    }, 1000);
-}
 
 //increment + decrement input number
 
@@ -106,8 +78,19 @@ function increment(x) {
      document.getElementById(x).stepDown();
   }
 
+  //cart
+let popupBlock = document.querySelector('.cart-popup');
+let cartButton = document.getElementById('cart-button');
+
+window.onload = function(){
+
+  cartButton.onclick = function() {
+    popupBlock.classList.add('display-block');
+
+  }
+}
 //preloader
 
-$(window).on("load",function(){
-         $(".loader-wrapper").fadeOut("slow");
-       });
+$(window).on('load',function(){
+   $('.loader-wrapper').fadeOut('slow');
+ });
