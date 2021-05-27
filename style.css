@@ -415,7 +415,7 @@ main.contact-us {
   width: calc(100% - 56px);
   height: 1px;
   left: 28px;
-  bottom: 27px;
+  bottom: 16px;
   background-color: var(--yblack);
 }
 
