@@ -565,15 +565,17 @@ background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmN
 }
 
 .filter_sort {
-  left: -135px;
+  left: -130px;
+  height: 200px;
 }
 
 .filter_fil::before{
   right: auto;
   left: 35px;
+  filter: drop-shadow(0px -1px 0px #CECECE);
 }
 .filter_sort::before {
-
+  filter: drop-shadow(0px -1px 0px #CECECE);
 }
 
 .fil-section__filter,
