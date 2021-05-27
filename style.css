@@ -2618,7 +2618,10 @@ input.main-checkout__inputbox_cvv {
   }
 
   .main-subscribe {
-    margin-bottom:auto;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: auto;
+    box-sizing: border-box;
   }
 
 /* Backgound on mobile (image - then content) */
