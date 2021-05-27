@@ -7,6 +7,8 @@ let moreMenu = document.querySelector('.more-nav__list'); //список доп 
 let moreMenuTablet = document.querySelector('.more-nav__list-tablet'); //список доп меню на <= 750
 let mainNav = document.querySelector('.main-nav'); //основное меню
 let headerNav = document.querySelector('.header-navbar'); //навбар
+let navIcons = document.querySelector('.nav-icons'); //кнопки навбара
+let popupBlock = document.querySelector('.popup'); //попап
 
 //появление поля поиска и проверка меню на открытость
 navSearchBtn.onclick = function() {
@@ -29,11 +31,11 @@ document.addEventListener('mouseup', function(e) {
 });
 
 document.addEventListener('mouseup', function(e) {
-    if (!headerNav.contains(e.target) || cartButton.contains(e.target)) {
+    if (!headerNav.contains(e.target) || navIcons.contains(e.target)) {
       moreMenu.classList.remove('more-active');
+      moreMenuTablet.classList.remove('more-active-tablet');
       listBg.classList.remove('more-nav-active');
       mainNav.classList.remove('visuallyhidden');
-      popupBlock.classList.remove('display-block');
   }
 });
 
@@ -70,7 +72,6 @@ debugMenuBtn.onclick = function() {
 
 
 //increment + decrement input number
-
 function increment(x) {
      document.getElementById(x).stepUp();
   }
@@ -78,17 +79,16 @@ function increment(x) {
      document.getElementById(x).stepDown();
   }
 
-  //cart
-let popupBlock = document.querySelector('.cart-popup');
-let cartButton = document.getElementById('cart-button');
 
-window.onload = function(){
+//Функция вызова попапа (первый аргумент - элемент, второй - класс)
+function popupShow(x, y) {
+  // x.classList.add(y);
+  let z = document.querySelector("." + x);
+    z.classList.add(y);
 
-  cartButton.onclick = function() {
-    popupBlock.classList.add('display-block');
-
-  }
 }
+
+
 //preloader
 
 $(window).on('load',function(){
