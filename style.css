@@ -3372,6 +3372,12 @@ ul.debug-menu {
     .product-pg-photo__thumbs {
       max-width: 420px;
     }
+    .modal-success {
+      font-size: 14px;
+    }
+    .modal-success_added {
+      left: calc(50% - 169px);
+    }
 }
 
 @media (max-width: 345px) {
@@ -3447,5 +3453,14 @@ ul.debug-menu {
 }
 .cart-page__product-delete {
   right: 0;
+}
+.modal-success {
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.modal-success_added {
+  left: calc(50% - 148px);
 }
 }
