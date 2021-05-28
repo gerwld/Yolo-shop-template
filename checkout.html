@@ -93,7 +93,7 @@
           <input type="tel"  id="utel" name="utel" inputmode="numeric" pattern="[0-9\s]{13,19}" required autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
         <span class="input-ic input-ic-card"></span>
           </label>
-        <label class="main-checkout__inputbox" for="expireMM">expire date <span class="req-span">*</span>
+        <label class="main-checkout__inputbox main-checkout__inputbox-exp" for="expireMM">expire date <span class="req-span">*</span>
           <div class="main-checkout__expire">
           <div class="main-checkout__select-inp"><select class="main-checkout__select" name='expireMM' id='expireMM' autocomplete="cc-exp-month" required>
             <option value=''>Month</option>
@@ -110,7 +110,7 @@
             <option value='11'>November</option>
             <option value='12'>December</option>
         </select></div>
-        <div class="main-checkout__select-inp">
+        <div class="main-checkout__select-inp main-checkout__select-inp-2">
         <select class="main-checkout__select" name='expireYY' id='expireYY' autocomplete="cc-exp-year" required>
             <option value=''>Year</option>
             <option value='21'>2021</option>
@@ -126,7 +126,7 @@
         <!-- <input type="hidden" name="expiry" id="expiry" maxlength="4" required> -->
         <span class="input-ic input-ic-calendar"></span>
 </label>
-        <label class="main-checkout__inputbox cvv_pretext" for="ucvv">sequrity code <span class="req-span">*</span>
+        <label class="main-checkout__inputbox main-checkout__inputbox-cvv cvv_pretext" for="ucvv">sequrity code <span class="req-span">*</span>
           <input class="main-checkout__inputbox_cvv" type="password" id="ucvv" name="ucvv" placeholder="123" maxlength="3" required autocomplete="cc-csc">
         <span class="input-ic input-ic-card"></span>
           </label>
@@ -170,7 +170,7 @@
             <span class="modal-form__slider"></span>
           </label>
       </div>
-      <button type="submit" class="btn btn_type-1 btn_arrow btn_yellow-1 btn-send">Pay Now</button>
+      <button type="submit" class="main-checkout__pay-btn btn btn_type-1 btn_arrow btn_yellow-1 btn-send">Pay Now</button>
     </div>
     </form>
 </main>
