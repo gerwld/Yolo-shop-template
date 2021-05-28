@@ -2,13 +2,14 @@
 <html lang="en" class="sale-page">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Sale Page – Yolo Template created by P. Jaworski</title>
   <link rel="stylesheet" href="font-face.css">
   <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="img/favicon.png"/>
 <link rel="icon" type="image/png" href="https://gerwld.github.io/yolo-template/img/favicon.png"/>
+<script src="https://kit.fontawesome.com/1c223ee528.js" crossorigin="anonymous"></script>
 </head>
 <body class="main-body sale-page-bg hg-100vh">
 <div class="content-wrapper">
@@ -97,7 +98,7 @@
           <img src="img/sale-page/product-1.jpg" class="img-grid-400" alt="Product photo">
         </div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_1" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_1" title="Add to Cart"></button>
     </div>
     <div class="sale-page__product type-1-product sale-page_reverse sale-page_product-left-1" id="product_2">
       <a href="product-page.html" class="type-1-product__link link-gray-hover">
@@ -107,7 +108,7 @@
           <img src="img/sale-page/product-2.png" alt="Product photo">
         </div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_2" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_2" title="Add to Cart"></button>
     </div>
     <div class="sale-page__product type-1_reverse type-1-product  sale-page_product-2-span" id="product_3">
       <a href="product-page.html" class="type-1-product__link link-gray-hover">
@@ -118,7 +119,7 @@
           <img src="img/sale-page/product-3.png" alt="Product photo">
         </div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_3" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_3" title="Add to Cart"></button>
     </div>
     <div class="sale-page__product type-1_reverse type-1-product" id="product_4">
       <a href="product-page.html" class="type-1-product__link link-gray-hover">
@@ -128,7 +129,7 @@
           <span class="type-1-product__percent percent_yellow">-27%</span>
           <img src="img/sale-page/product-4.jpg" alt="Product photo"></div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_4" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_4" title="Add to Cart"></button>
     </div>
     <div class="sale-page__product type-1_reverse type-1-product" id="product_5">
       <a href="product-page.html" class="type-1-product__link link-gray-hover">
@@ -139,9 +140,10 @@
           <img src="img/sale-page/product-5.jpg" class="img-grid-400" alt="Product photo">
         </div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_5" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_5" title="Add to Cart"></button>
     </div>
   </section>
+  <span class="modal-success modal-success_added" id="modal-success"><i class="far fa-check-circle"></i>Product added to shopping cart</span>
 </main>
 <footer class="footer sale-page_footer">
   <div class="nav-icons nav-icons_footer">

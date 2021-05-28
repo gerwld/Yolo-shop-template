@@ -107,6 +107,13 @@ function popupShow(x, y) {
     z.classList.add(y);
 }
 
+//попап появляющийся снизу
+let popupSuccessModal = document.querySelector('.modal-success');
+
+function popupSucces() {
+  popupSuccessModal.classList.add('modal-success-active');
+  setTimeout(function(){popupSuccessModal.classList.remove('modal-success-active');}, 2000);
+}
 
 //preloader
 

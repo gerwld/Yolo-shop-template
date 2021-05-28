@@ -9,6 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="icon" type="image/png" href="img/favicon.png"/>
 <link rel="icon" type="image/png" href="https://gerwld.github.io/yolo-template/img/favicon.png"/>
+<script src="https://kit.fontawesome.com/1c223ee528.js" crossorigin="anonymous"></script>
 </head>
 <body class="main-body catalogue-bg">
 <div class="content-wrapper">
@@ -95,7 +96,7 @@
       <span class="type-1-product__sub type-1-product_price">39.99</span>
         <div class="type-1-product__photo"><img src="img/product-1.png" alt="Product photo"></div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_1" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_1" title="Add to Cart"></button>
     </div>
     <div class="cat-content__product type-1-product" id="product_2">
       <a href="product-page.html" class="type-1-product__link link-gray-hover" title="Go to product">
@@ -103,7 +104,7 @@
       <span class="type-1-product__sub type-1-product_price">49.99</span>
         <div class="type-1-product__photo"><img src="img/product-2.png" alt="Product photo"></div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_2" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_2" title="Add to Cart"></button>
     </div>
     <div class="cat-content__product type-1-product" id="product_3">
       <a href="product-page.html" class="type-1-product__link link-gray-hover" title="Go to product">
@@ -111,7 +112,7 @@
       <span class="type-1-product__sub type-1-product_price">39.99</span>
         <div class="type-1-product__photo"><img src="img/product-3.png" alt="Product photo"></div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_3" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_3" title="Add to Cart"></button>
     </div>
     <div class="cat-content__product type-1-product" id="product_4">
       <a href="product-page.html" class="type-1-product__link link-gray-hover" title="Go to product">
@@ -119,7 +120,7 @@
       <span class="type-1-product__sub type-1-product_price">39.99</span>
         <div class="type-1-product__photo"><img src="img/product-4.png" alt="Product photo"></div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_4" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_4" title="Add to Cart"></button>
     </div>
     <div class="cat-content__product type-1-product" id="product_5">
       <a href="product-page.html" class="type-1-product__link link-gray-hover" title="Go to product">
@@ -127,7 +128,7 @@
       <span class="type-1-product__sub type-1-product_price">29.99</span>
         <div class="type-1-product__photo"><img src="img/product-5.png" alt="Product photo"></div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_5" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_5" title="Add to Cart"></button>
     </div>
     <div class="cat-content__product type-1-product" id="product_6">
       <a href="product-page.html" class="type-1-product__link link-gray-hover" title="Go to product">
@@ -135,9 +136,10 @@
       <span class="type-1-product__sub type-1-product_price">39.99</span>
         <div class="type-1-product__photo"><img src="img/product-6.png" alt="Product photo"></div>
       </a>
-      <button type="button" class="type-1-product__button btn btn-cart" id ="product_6" title="Add to Cart"></button>
+      <button type="button" onclick="popupSucces()" class="type-1-product__button btn btn-cart" id ="product_6" title="Add to Cart"></button>
     </div>
   </section>
+  <span class="modal-success modal-success_added" id="modal-success"><i class="far fa-check-circle"></i>Product added to shopping cart</span>
 </main>
 <footer class="footer catalogue_footer">
   <div class="nav-icons nav-icons_footer">
