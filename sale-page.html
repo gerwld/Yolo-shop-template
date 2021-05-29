@@ -155,6 +155,19 @@
 </footer>
 </div>
 <script src="script.js"></script>
+<script>
+document.addEventListener('mouseup', function(e) {
+    if (!filterPop.contains(e.target)) {
+    filterPop.classList.remove('display-flex');
+  }
+});
+
+document.addEventListener('mouseup', function(e) {
+    if (!filterPop1.contains(e.target)) {
+    filterPop1.classList.remove('display-flex');
+  }
+});
+</script>
 <!-- pre-loader code -->
 <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>

@@ -47,23 +47,19 @@ document.addEventListener('mouseup', function(e) {
   }
 });
 
-document.addEventListener('mouseup', function(e) {
-    if (!popupBlock.contains(e.target)) {
-    popupBlock.classList.remove('display-flex');
-  }
-});
 
-document.addEventListener('mouseup', function(e) {
-    if (!filterPop.contains(e.target)) {
-    filterPop.classList.remove('display-flex');
-  }
-});
-
-document.addEventListener('mouseup', function(e) {
-    if (!filterPop1.contains(e.target)) {
-    filterPop1.classList.remove('display-flex');
-  }
-});
+// Code for popupBlock
+// document.addEventListener('mouseup', function(e) {
+//     if (!filterPop.contains(e.target)) {
+//     filterPop.classList.remove('display-flex');
+//   }
+// });
+//
+// document.addEventListener('mouseup', function(e) {
+//     if (!filterPop1.contains(e.target)) {
+//     filterPop1.classList.remove('display-flex');
+//   }
+// });
 
 //функция поиска
 function searchOpen(){
