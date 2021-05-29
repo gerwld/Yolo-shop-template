@@ -2714,7 +2714,7 @@ input.main-checkout__inputbox_cvv {
 		left: 0;
 		top: 0;
 		background-color: rgba(105, 119, 138, 0.8);
-		z-index: 0;
+		z-index: 9;
 	}
 	.seach-input::before {
 		content: "";
