@@ -874,11 +874,12 @@ ul.debug-menu {
 ul.debug-menu_hidden {
 	right: -110px;
 }
-/* Debug menu prop finish */
 
 .debug-menu li {
 	margin-bottom: 10px;
 }
+
+/* Debug menu prop finish */
 .contact-us__info {
 	margin-top: 48px;
 }
