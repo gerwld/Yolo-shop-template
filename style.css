@@ -832,6 +832,22 @@ input {
 .modal-form__toggle-input:focus + .modal-form__slider {
 	box-shadow: none;
 }
+.modal-form__input_password {
+	position: relative;
+}
+
+.input-pass {
+	position: absolute;
+	right: 5px;
+	top: 20px;
+	cursor: pointer;
+}
+
+.input-pass i {
+	font-size: 20px;
+	color: #7E959E;
+}
+
 /* Toggle checkbox end */
 
 .section_subtext {
@@ -1975,6 +1991,9 @@ input.main-checkout__inputbox_cvv {
 .popup__text {
 	margin-top: 20px;
 }
+
+
+
 @media (max-width: 1292px) {
 	.content-wrapper {
 		margin-left: 40px;
@@ -2783,6 +2802,7 @@ input.main-checkout__inputbox_cvv {
 		min-height: 670px;
 	}
 	.main-bg .main-content__slogan {
+		color: #000;
 		margin-bottom: 22px;
 	}
 	.main-bg .footer {

@@ -103,6 +103,21 @@ function popupShow(x, y) {
     z.classList.add(y);
 }
 
+// Функция показа пароля
+function showPwd(x, y) {
+  let userPassIc = document.querySelector(".user-pass-icon");
+  let z = document.getElementById(x);
+  if (z.type === "password") {
+    z.type = "text";
+    userPassIc.classList.remove('fa-eye-slash');
+    userPassIc.classList.add('fa-eye');
+  } else {
+    z.type = "password";
+    userPassIc.classList.remove('fa-eye');
+    userPassIc.classList.add('fa-eye-slash');
+  }
+}
+
 //попап появляющийся снизу
 let popupSuccessModal = document.querySelector('.modal-success');
 
