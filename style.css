@@ -32,7 +32,8 @@ body {
 }
 .form-quantity,
 .product-pg-info__form-size,
-.product-pg-info__form-color {
+.product-pg-info__form-color,
+.modal-form__input_password {
 	-webkit-touch-callout: none;
 	/* iOS Safari */
 	-webkit-user-select: none;
