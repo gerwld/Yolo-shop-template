@@ -17,9 +17,9 @@ Link to the project - https://gerwld.github.io/Yolo-Project/
 ==============
 
 ### Work-in-progress
-- Not hardcoded data
 - Search logic & UI
 - Shopcart & payment logic
+- Not hardcoded data
 
 <br>
 
