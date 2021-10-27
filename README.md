@@ -11,7 +11,7 @@ Link to the project - https://gerwld.github.io/Yolo-Project/
 - Contains mobile version
 - Fluid Grid layout in products list
 - Redesigned forms
-- Forms with smart buttons (show/hide password, ect.)
+- Forms with smart buttons (show/hide password, etc.)
 - Have 2 toggle and one default menu (depends what is showing from VW size)
 
 ==============
