@@ -40,6 +40,6 @@ Link to the project - https://gerwld.github.io/Yolo-Project/
 
 ## Screencasts:
 
-[![img_tag](https://user-images.githubusercontent.com/47056812/139117650-31477664-c997-43b2-8720-82a405ddc72d.png)](https://youtu.be/bWtihxKpe-8)
+[![img_tag](https://user-images.githubusercontent.com/47056812/139118778-d3b8d98a-4351-4efb-9659-b134e7155c25.png)](https://youtu.be/bWtihxKpe-8)
 <br>
 [![img_tag](https://user-images.githubusercontent.com/47056812/139116099-e5657c1c-309b-4915-bc4d-99edecd8ac6b.png)](https://youtu.be/2xELyaefBWY)
