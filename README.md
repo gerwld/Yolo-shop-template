@@ -27,13 +27,20 @@ Link to the project - https://gerwld.github.io/Yolo-Project/
 
 <details><summary><b>Click here to open:</b></summary><br>
  
-![tg_image_3261434955](https://user-images.githubusercontent.com/47056812/139117064-355ab5a2-73b2-40f9-ada6-ced1996ed7a2.jpeg) <hr/>
-![image](https://user-images.githubusercontent.com/47056812/139117118-0a17b301-39e8-4c2f-a7a7-bd083419e020.png) <hr/>
-![image](https://user-images.githubusercontent.com/47056812/139117098-df65180f-65a0-40e2-8ff7-d62ff0f1cf0d.png) <hr/>
-![image](https://user-images.githubusercontent.com/47056812/139117157-ec31bbeb-ec32-4aef-b92e-01c84240877b.png) <hr/>
-![image](https://user-images.githubusercontent.com/47056812/139117144-df5f6870-dc3a-4eb2-a54d-36dfb4df4e09.png) <hr/>
-![image](https://user-images.githubusercontent.com/47056812/139117180-4a48425a-18d6-4edf-a5dc-2e871b7b28dd.png) <hr/>
-![image](https://user-images.githubusercontent.com/47056812/139117264-f1e4da10-25c1-4408-a958-0bc25de0f8bf.png) <hr/>
+![tg_image_3261434955](https://user-images.githubusercontent.com/47056812/139117064-355ab5a2-73b2-40f9-ada6-ced1996ed7a2.jpeg)
+---
+![image](https://user-images.githubusercontent.com/47056812/139117118-0a17b301-39e8-4c2f-a7a7-bd083419e020.png)
+---
+![image](https://user-images.githubusercontent.com/47056812/139117098-df65180f-65a0-40e2-8ff7-d62ff0f1cf0d.png)
+---
+![image](https://user-images.githubusercontent.com/47056812/139117157-ec31bbeb-ec32-4aef-b92e-01c84240877b.png)
+---
+![image](https://user-images.githubusercontent.com/47056812/139117144-df5f6870-dc3a-4eb2-a54d-36dfb4df4e09.png)
+---
+![image](https://user-images.githubusercontent.com/47056812/139117180-4a48425a-18d6-4edf-a5dc-2e871b7b28dd.png)
+---
+![image](https://user-images.githubusercontent.com/47056812/139117264-f1e4da10-25c1-4408-a958-0bc25de0f8bf.png)
+---
 
 </details>
 <br>
