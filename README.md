@@ -2,7 +2,7 @@
 ![Logo](https://raw.githubusercontent.com/gerwld/host-data/cb11fddbc5aa0a92ea3d2a8918c89eb48e954552/logo-yo.svg)
 
 <b>Yolo - Online Shop Project, fully responsible.</b> \
-Link to the project - https://gerwld.github.io/Yolo-Project/
+Link to the project - https://gerwld.github.io/Yolo-shop-template/
 
 ![image](https://user-images.githubusercontent.com/47056812/139115659-44bb6e43-4eb0-423b-ac84-3ea399cd4569.png)
 
